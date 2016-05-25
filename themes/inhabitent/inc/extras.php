@@ -21,13 +21,58 @@ function red_starter_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
 
-
+// Changes Login Logo from WP to Inhabitent
 function inhabitent_login_logo() { ?>
   <style type="text/css">
     #login h1 a, .login h1 a {
-      background-image: url(<?php echo get_stylesheet_directory_uri(); ?>img/logos/inhabitent-logo-text-dark.svg);
-      padding-bottom: 30px;
-    }
+      background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/img/logos/inhabitent-logo-text-dark.svg);
+			background-size: contain;
+			width: 100%;
+		}
   </style>
 <?php }
 add_action( 'login_enqueue_scripts', 'inhabitent_login_logo' );
+
+function inhabitent_login_logo_url() {
+	return home_url();
+}
+add_filter( 'login_headerurl', 'inhabitent_login_logo_url' );
+
+function inhabitent_login_logo_url_title() {
+    return 'Inhabitent Camping co';
+}
+add_filter( 'login_headertitle', 'inhabitent_login_logo_url_title' );
+
+
+// About Header CSS //
+function about_header_styles_method() {
+
+	if ( !is_page_template( 'about.php' ) ) {
+		return ;
+	}
+
+	$image ='http:' . CFS()->get( 'header_image' );
+  $custom_css = "
+		.about-header {
+			background: linear-gradient( to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 100% ), url(" . $image . ") no-repeat center bottom;
+			background-size: cover, cover;
+		}";
+
+	wp_add_inline_style( 'inhabitent-style', $custom_css );
+}
+
+add_action( 'wp_enqueue_scripts', 'about_header_styles_method' );
+
+
+// Sorts Product Archive Page
+
+function inhabitent_filter_product_query( $query ) {
+
+	if ( is_post_type_archive() && !is_admin() && $query->is_main_query() ) {
+		$query->set( 'orderby', 'title');
+		$query->set( 'order', 'ASC');
+		$query->set( 'posts_per_page', 16 );
+	}
+
+}
+add_action( 'pre_get_posts', 'inhabitent_filter_product_query' );

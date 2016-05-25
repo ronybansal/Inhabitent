@@ -421,11 +421,13 @@ a {
 /* Menus */
 .main-navigation {
   clear: both;
-  display: block;
+  display: -ms-flexbox;
+  display: flex;
   float: left;
   width: 100%; }
   .main-navigation ul {
-    display: none;
+    display: -ms-flexbox;
+    display: flex;
     list-style: none;
     margin: 0;
     padding-left: 0; }
@@ -457,13 +459,8 @@ a {
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-  display: block; }
-
-@media screen and (min-width: 37.5em) {
-  .menu-toggle {
-    display: none; }
-  .main-navigation ul {
-    display: block; } }
+  display: -ms-flexbox;
+  display: flex; }
 
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
@@ -483,6 +480,43 @@ a {
   float: right;
   text-align: right;
   width: 50%; }
+
+.site-header h1 {
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap; }
+
+.site-header img {
+  height: 33px;
+  margin: 0;
+  width: 50px; }
+
+.site-header {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid #e1e1e1;
+  position: fixed;
+  width: 100%;
+  z-index: 3; }
+
+.header-container {
+  width: 1120px;
+  margin: 0 auto;
+  padding: 5px 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.main-navigation {
+  width: auto; }
+  .main-navigation a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    color: #248A83; }
+    .main-navigation a:hover {
+      color: #2f1339; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -656,3 +690,76 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+/*--------------------------------------------------------------
+# Front Page
+--------------------------------------------------------------*/
+/* Front page */
+.herobanner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0, rgba(0, 0, 0, 0.4)), #969696 url(../../img/home-hero.jpg) no-repeat top;
+  background-size: cover;
+  height: 100vh;
+  width: 100%; }
+
+.logobanner {
+  height: 275px;
+  width: 275px; }
+
+.header-container {
+  display: -ms-flexbox;
+  display: flex; }
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.site-footer {
+  background: url(../../img/dark-wood.png);
+  background-size: 512px 512px;
+  color: #fff; }
+
+.footer-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 40px; }
+  .footer-container h3 {
+    color: #d99054;
+    text-transform: uppercase; }
+
+.contact-info {
+  margin-left: 130px;
+  line-height: 1.5; }
+  .contact-info a {
+    text-decoration: none;
+    color: white; }
+    .contact-info a:hover {
+      text-decoration: underline; }
+  .contact-info i {
+    font-size: 1.25rem;
+    padding-right: 7px; }
+
+.business-hours {
+  line-height: 1.5;
+  margin-right: 235px; }
+  .business-hours .days {
+    font-weight: bold; }
+
+.footer-logo {
+  max-width: 20%;
+  margin-right: 105px;
+  padding-top: 20px; }
+
+.site-info {
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  margin-top: 30px;
+  padding-bottom: 25px; }
+  .site-info .year {
+    font-size: 0.8rem; }

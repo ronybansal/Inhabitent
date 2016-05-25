@@ -1,0 +1,24 @@
+/*--------------------------------------------------------------
+# Front Page
+--------------------------------------------------------------*/
+
+/* Front page */
+.herobanner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg,rgba(0,0,0,.4) 0,rgba(0,0,0,.4)),#969696
+    url(../../img/home-hero.jpg) no-repeat top;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+.logobanner {
+  height: 275px;
+  width: 275px;
+}
+
+.header-container{
+  display: flex;
+}

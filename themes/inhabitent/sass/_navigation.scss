@@ -28,12 +28,12 @@ a {
 
 .main-navigation {
 	clear: both;
-	display: block;
+	display: flex;
 	float: left;
 	width: 100%;
 
 	ul {
-		display: none;
+		display: flex;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
@@ -98,17 +98,17 @@ a {
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-	display: block;
+	display: flex;
 }
 
-@media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
-}
+// @media screen and (min-width: 37.5em) {
+// 	.menu-toggle {
+// 		display: none;
+// 	}
+// 	.main-navigation ul {
+// 		display: block;
+// 	}
+// }
 
 .comment-navigation,
 .posts-navigation,
@@ -128,5 +128,48 @@ a {
 		float: right;
 		text-align: right;
 		width: 50%;
+	}
+}
+
+// FRONT PAGE NAV BAR
+
+.site-header h1 {
+	overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+
+.site-header img {
+  height: 33px;
+  margin: 0;
+  width: 50px;
+}
+
+.site-header {
+  background-color: hsla(0,0%,100%,.85);
+  border-bottom: 1px solid #e1e1e1;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header-container {
+	width: 1120px;
+	margin: 0 auto;
+	padding: 5px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.main-navigation {
+	width: auto;
+	a {
+		padding: 0 15px;
+		text-transform: uppercase;
+		color: #248A83;
+		&:hover {
+			color: #2f1339
+		}
 	}
 }
