@@ -7,10 +7,9 @@
 
 get_header(); ?>
 
-<div class="about-content">
   <div id="primary" class="about-area">
       <main id="main" class="site-main" role="main">
-
+        <div class="about-content">
           <section class="about-header">
               <h1>About</h1>
           </section>
@@ -23,8 +22,7 @@ get_header(); ?>
                       <?php echo CFS()->get( 'our_team' ); ?>
               </div>
           </section>
-
+        </div>
       </main><!-- #main -->
   </div><!-- #primary -->
-</div>
 <?php get_footer(); ?>

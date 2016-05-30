@@ -2,7 +2,8 @@
 # Front Page
 --------------------------------------------------------------*/
 
-/* Front page */
+/* HERO BANNER */
+
 .herobanner {
   display: flex;
   justify-content: center;
@@ -21,4 +22,108 @@
 
 .header-container{
   display: flex;
+}
+
+
+/* SHOP SECTION*/
+
+.fp-shop {
+  text-align: center;
+
+  h1 {
+    margin: 60px;
+  }
+}
+
+
+/* BOXES FOR SHOP CATEGORIES */
+
+.fp-shop-box {
+  display: flex;
+  justify-content: space-around;
+
+  img {
+    height: 70px;
+    width: 70px;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+  }
+
+  a {
+    background: #248a83;
+    color: #fff;
+    cursor: pointer;
+    font-family: Novecento Sans Web,sans-serif;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+.fp-shop-ctg {
+  border: 1px solid #e1e1e1;
+  border-top-width: 5px;
+  padding: 1.5rem;
+  max-width: 23%;
+
+  &:hover {
+    border-color: #d99054
+  }
+}
+
+
+/* JOURNAL SECTION */
+
+.fp-journal {
+  margin: 60px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fp-journal-box {
+  width: 32%;
+  height: auto;
+  border: 1px solid #e1e1e1;
+
+  img {
+    width: 100%;
+    max-height: 238px;
+    border-bottom: 5px solid #e1e1e1;
+  }
+}
+
+.fp-journal-info {
+  padding: 25px 15px 2px;
+  font-size: 0.7rem;
+  line-height: 0;
+
+  h4 a {
+    color: #248A83;
+    font-size: 1.3rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    line-height: 1.6rem;
+
+    &:hover {
+      color: #2f1339;
+    }
+  }
+  .read-entry {
+    color: black;
+    cursor: pointer;
+    font-family: Novecento Sans Web,sans-serif;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 1px solid black;
+
+    &:hover {
+      background: #248A83;
+      color: #ffffff;
+      border: 1px solid #248A83; 
+    }
+  }
 }

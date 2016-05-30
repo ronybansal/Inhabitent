@@ -10,7 +10,7 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
-				<div class="footer-container">
+				<div class="footer-wrapper">
 					<div class="contact-info">
 						<h3>Contact Info</h3>
 							<p>
@@ -51,7 +51,6 @@
 						copyright &copy; <span class="year">2016</span> inhabitent
 					</div>
 
-				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 
