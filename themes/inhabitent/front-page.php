@@ -52,10 +52,10 @@ get_header(); ?>
 
         <!-- SORTS JOURNALS TO POST 3 PIECES-->
 
-      <section class= "container">
+      <section class= "fp-journal container">
 				<h1>Inhabitent Journal</h1>
 
-        <div class="fp-journal">
+        <div class="fp-journal-wrapper">
 					<?php
 					   $args = array( 'post_type' => 'post', 'posts_per_page' => 3 );
 					   $journal_posts = get_posts( $args ); // returns an array of posts
@@ -89,7 +89,7 @@ get_header(); ?>
       <section class="fp-adventures container">
         <h1>Latest Adventures</h1>
 
-        <div class="adventures-container"> </div>
+        <div class="adventures-wrapper"> </div>
         <a href="#">More Adventures</a>
       </section>
 

@@ -76,8 +76,12 @@
 
 /* JOURNAL SECTION */
 
-.fp-journal {
-  margin: 60px auto;
+.fp-journal h1 {
+  text-align: center;
+  line-height: 10rem;
+}
+
+.fp-journal-wrapper {
   display: flex;
   justify-content: space-between;
 }
@@ -95,7 +99,7 @@
 }
 
 .fp-journal-info {
-  padding: 25px 15px 2px;
+  padding: 25px 15px 10px;
   font-size: 0.7rem;
   line-height: 0;
 
@@ -119,11 +123,12 @@
     text-decoration: none;
     text-transform: uppercase;
     border: 1px solid black;
+    line-height: 3rem;
 
     &:hover {
       background: #248A83;
       color: #ffffff;
-      border: 1px solid #248A83; 
+      border: 1px solid #248A83;
     }
   }
 }
