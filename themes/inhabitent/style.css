@@ -949,7 +949,6 @@ object {
       .product-links li a:hover {
         color: purple; }
 
-/* Product Grid Area */
 .product-area {
   width: 1120px;
   padding-top: 20px;
@@ -1019,11 +1018,9 @@ object {
   .product-grid .product-price {
     padding-left: 2px; }
 
-/* Product Category Page */
 .product-tax-page {
   text-align: center; }
 
-/* Single Product Page */
 .single-product-content .type-product {
   display: -ms-flexbox;
   display: flex; }
@@ -1043,3 +1040,29 @@ object {
 
 .single-product-content .moretag {
   margin-top: 0; }
+
+.about-header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100vh; }
+  .about-header h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 3rem; }
+
+.about {
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px; }
+  .about .about-paragraphs {
+    max-width: 800px;
+    margin: 3rem auto; }
+  .about .about-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #2f1339; }
