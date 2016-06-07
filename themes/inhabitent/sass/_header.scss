@@ -1,0 +1,20 @@
+.fa-search {
+  line-height: 1.5;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+input[type=search] {
+  background: transparent;
+  text-transform: uppercase;
+  font-family: 'novocento', sans-serif;
+  border: 0;
+  outline: none;
+  width: 200px;
+  display: none;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+}

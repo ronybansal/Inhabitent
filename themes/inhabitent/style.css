@@ -591,6 +591,14 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+.widget-area {
+  padding-left: 3rem; }
+
+.widget_archive ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -1066,3 +1074,46 @@ object {
     text-align: center;
     font-size: 2rem;
     color: #2f1339; }
+
+.status-publish h1 {
+  font-size: 2.5rem; }
+
+.status-publish h2 {
+  color: #2f1339;
+  font-size: 2rem; }
+
+.wpcf7-form label {
+  text-transform: uppercase;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 1.1rem;
+  font-weight: normal; }
+
+.wpcf7-form .required {
+  color: #d99054;
+  font-size: 1.1rem; }
+
+.wpcf7-form .ajax-loader {
+  height: 20px;
+  width: 20px; }
+
+.wpcf7-form .wpcf7-submit {
+  font-size: .9rem;
+  padding: 8px 22.5px; }
+
+.fa-search {
+  line-height: 1.5;
+  margin-right: 5px;
+  cursor: pointer; }
+
+input[type=search] {
+  background: transparent;
+  text-transform: uppercase;
+  font-family: 'novocento', sans-serif;
+  border: 0;
+  outline: none;
+  width: 200px;
+  display: none; }
+
+fieldset {
+  margin: 0;
+  padding: 0; }
