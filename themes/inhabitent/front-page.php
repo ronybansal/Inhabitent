@@ -86,10 +86,10 @@ get_header(); ?>
 				</div> <!-- .FP-JOURNAL -->
 			</section>
 
-      <section class="fp-adventures container">
+      <section class="adventures container">
         <h1>Latest Adventures</h1>
 
-        <div class="adventures-wrapper"> </div>
+        <div class="adventures-"> </div>
         <a href="#">More Adventures</a>
       </section>
 

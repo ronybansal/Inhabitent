@@ -1,0 +1,137 @@
+/* Header of Shop Page */
+
+.product-links {
+  list-style: none;
+  display: flex;
+  margin-left: 0;
+  padding-left:0;
+
+  li {
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    font-family: $font__pre;
+    font-weight: normal;
+    text-transform: uppercase;
+
+    a {
+      color: $color__link;
+
+      &:hover {
+        color: $color__link-visited;
+      }
+    }
+  }
+}
+
+
+.product-area {
+  width: 1120px;
+  padding-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 60px;
+}
+
+.product-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px dashed #e1e1e1;
+  margin-bottom: 20px;
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .product-list {
+    list-style: none;
+    text-transform: uppercase;
+    display: flex;
+    padding-left: 0;
+    margin-left: 0;
+    font-family: $font__pre;
+    font-size: 1.2rem;
+
+    li {
+      padding: 0 25px;
+    }
+  }
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 30px;
+
+  .product-grid-item {
+    max-width: 23%;
+    flex: 0 1 23%;
+    margin-bottom: 20px;
+  }
+
+  .product-image {
+    overflow: hidden;
+    position: relative;
+    height: 250px;
+    background: #e1e1e1;
+
+    img {
+      max-height: 250px;
+      width: auto;
+      max-width: none;
+      position: absolute;
+      top:50%;
+      left: 50%;
+      transform: translate(-50%,-52%);
+    }
+  }
+
+  .product-info {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #e1e1e1;
+    background: white;
+    padding: 5px;
+  }
+
+  .product-price {
+    padding-left: 2px;
+  }
+}
+
+
+.product-tax-page {
+  text-align: center;
+}
+
+
+.single-product-content {
+  .type-product {
+    display: flex;
+  }
+
+  .entry-header {
+    padding-top: 70px;
+    width: 48%;
+  }
+
+  .entry-content {
+    width: 48%;
+    padding-left: 50px;
+
+    .entry-title {
+      color: #d99054;
+    }
+
+    .price {
+      font-size: 1.5rem;
+      font-family: $font__pre;
+    }
+  }
+
+  .moretag {
+    margin-top: 0;
+  }
+}
