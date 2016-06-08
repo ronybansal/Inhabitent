@@ -25,17 +25,6 @@
 }
 
 
-/* SHOP SECTION*/
-
-.fp-shop {
-  text-align: center;
-
-  h1 {
-    margin: 60px;
-  }
-}
-
-
 /* BOXES FOR SHOP CATEGORIES */
 
 .fp-shop-box {
@@ -50,20 +39,6 @@
   p {
     margin-bottom: 1.5rem;
   }
-
-  a {
-    background: #248a83;
-    color: white;
-    cursor: pointer;
-    font-family: Novecento Sans Web,sans-serif;
-    padding: .75rem 1.5rem;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    &:hover {
-      background-color: #19625d;
-    }
-  }
 }
 
 .fp-shop-ctg {
@@ -71,6 +46,7 @@
   border-top-width: 5px;
   padding: 1.5rem;
   max-width: 23%;
+  text-align: center;
 
   &:hover {
     border-color: #d99054
@@ -79,11 +55,6 @@
 
 
 /* JOURNAL SECTION */
-
-.fp-journal h1 {
-  text-align: center;
-  line-height: 10rem;
-}
 
 .fp-journal-wrapper {
   display: flex;
@@ -107,9 +78,9 @@
   font-size: 0.7rem;
   line-height: 0;
 
-  h4 a {
+  h3 a {
     color: #248A83;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
@@ -122,7 +93,6 @@
   .read-entry {
     color: black;
     cursor: pointer;
-    font-family: Novecento Sans Web,sans-serif;
     padding: .75rem 1.5rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -140,20 +110,14 @@
 /* LATEST ADVENTURES */
 
 .adventures {
-  h1 {
-    text-align: center;
-    line-height: 10rem;
-  }
 
   h3 { /* ADVENTURE TITLES */
     a {
       color: white;
       font-family: $font__main;
-      text-transform: none;
       text-decoration: none;
       font-weight: 400;
       letter-spacing: 0.2rem;
-      padding-bottom: 10rem;
 
       &:hover {
         color: #f0e4d1 ;
@@ -172,6 +136,7 @@
     z-index: -1;
     position: relative;
     display: block;
+    object-fit: cover;
   }
 
   ul {
@@ -181,17 +146,13 @@
     margin-left: 0;
 
     li {
-      h3 a {
-        margin-bottom: 20px;
-      }
-
       &:first-child {
         width: 49%;
         float: left;
 
         h3 a {
           font-size: 3rem;
-          line-height: 1.3;
+          line-height: 1.2;
         }
       }
 
@@ -206,7 +167,7 @@
 
         h3 a {
           font-size: 2.5rem;
-          line-height: 1.3;
+          line-height: 1.1;
         }
       }
 
@@ -222,8 +183,8 @@
         }
 
         h3 a {
-          font-size: 1.75rem;
-          line-height: 1.3;
+          font-size: 1.6rem;
+          line-height: 1
         }
       }
     } // LI
@@ -248,56 +209,3 @@
     padding: 20px 10px;
   }
 }
-
-.readtag {
-  border: 1px solid white;
-  padding: 12.5px 25px;
-  font-family: $font__pre;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: white;
-  font-size: 0.9rem;
-  line-height: 5rem;
-
-  &:hover {
-    background-color: #248A83;
-    color: white;
-    border: 1px solid #248A83;
-    outline: 0;
-  }
-
-  &:active {
-    outline: 0;
-  }
-
-  &:visited {
-    color: white;
-
-    &:hover {
-      color:white;
-    }
-  }
-} // .READTAG
-
-.button {
-  padding: 12.5px 25px;
-  font-family: $font__pre;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: white;
-  font-size: 1.1rem;
-  background-color: #248A83;
-
-  &:hover {
-    background-color: #19625d;
-    color: white;
-  }
-
-  &:visited {
-    color: white;
-
-    &:hover {
-      color:white;
-    }
-  }
-} // .BUTTON

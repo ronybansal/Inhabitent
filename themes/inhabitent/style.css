@@ -222,6 +222,36 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+@font-face {
+  font-family: 'merriweather';
+  src: url("../../fonts/merriweather/merriweather-bold-webfont.woff2") format("woff2"), url("../../fonts/merriweather/merriweather-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'merriweather';
+  src: url("../../fonts/merriweather/merriweather-bolditalic-webfont.woff2") format("woff2"), url("../../fonts/merriweather/merriweather-bolditalic-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'merriweather';
+  src: url("../../fonts/merriweather/merriweather-light-webfont.woff2") format("woff2"), url("../../fonts/merriweather/merriweather-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'novocento';
+  src: url("../../fonts/novocento/novecentosanswide-normal-webfont.woff2") format("woff2"), url("../../fonts/novocento/novocentosanswide-normal-webfont.woff") format("woff"), url("../../fonts/novocento/novocentosanswide-normal-webfont.svg") format("svg"), url("../../fonts/novocento/novocentosanswide-normal-webfont.ttf") format("ttf"), url("../../fonts/novocento/novocentosanswide-normal-webfont.eot") format("eot");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'novocento';
+  src: url("../../fonts/novocento/novecentosanswide-demibold-webfont.woff2") format("woff2"), url("../../fonts/novocento/novocentosanswide-demibold-webfont.woff") format("woff"), url("../../fonts/novocento/novocentosanswide-demibold-webfont.svg") format("svg"), url("../../fonts/novocento/novocentosanswide-demibold-webfont.ttf") format("ttf"), url("../../fonts/novocento/novocentosanswide-demibold-webfont.eot") format("eot");
+  font-weight: bold;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -231,7 +261,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "merriweather", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -339,6 +369,75 @@ table {
   margin: 0 0 1.5em;
   width: 100%; }
 
+.green-btn {
+  background: #248a83;
+  color: white;
+  cursor: pointer;
+  font-family: "novocento", sans-serif;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase; }
+  .green-btn:hover {
+    background-color: #19625d;
+    color: white; }
+  .green-btn:visited {
+    color: white; }
+
+.white-btn {
+  border: 1px solid white;
+  padding: 12.5px 25px;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+  line-height: 5rem; }
+  .white-btn:hover {
+    background-color: #248A83;
+    color: white;
+    border: 1px solid #248A83;
+    outline: 0; }
+  .white-btn:active {
+    outline: 0; }
+  .white-btn:visited {
+    color: white; }
+    .white-btn:visited:hover {
+      color: white; }
+
+.black-btn {
+  color: black;
+  cursor: pointer;
+  font-family: "novocento", sans-serif;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid black;
+  line-height: 3rem; }
+  .black-btn:hover {
+    background: #248A83;
+    color: white !important;
+    border: 1px solid #248A83; }
+  .black-btn:visited {
+    color: black; }
+
+.fp-header {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-top: 3.75rem;
+  margin-bottom: 3.75rem;
+  text-align: center;
+  color: #2f1339; }
+
+h1 {
+  font-family: "novocento", sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+.fp-shop-ctg p {
+  font-family: "merriweather", sans-serif;
+  font-size: 1rem;
+  line-height: 1.75; }
+
 .container {
   width: 1120px;
   margin: 0 auto; }
@@ -428,7 +527,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   float: left;
-  width: 100%; }
+  width: 100%;
+  font-family: "Courier 10 Pitch", Courier, monospace; }
   .main-navigation ul {
     display: -ms-flexbox;
     display: flex;
@@ -599,6 +699,17 @@ a {
   padding: 0;
   margin: 0; }
 
+.contact i {
+  line-height: 1.8;
+  margin-right: .5rem;
+  width: 20px; }
+
+.contact a {
+  color: #248A83;
+  text-decoration: none; }
+  .contact a:hover {
+    color: #2f1339; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -725,12 +836,6 @@ object {
   display: -ms-flexbox;
   display: flex; }
 
-/* SHOP SECTION*/
-.fp-shop {
-  text-align: center; }
-  .fp-shop h1 {
-    margin: 60px; }
-
 /* BOXES FOR SHOP CATEGORIES */
 .fp-shop-box {
   display: -ms-flexbox;
@@ -742,30 +847,17 @@ object {
     width: 70px; }
   .fp-shop-box p {
     margin-bottom: 1.5rem; }
-  .fp-shop-box a {
-    background: #248a83;
-    color: white;
-    cursor: pointer;
-    font-family: Novecento Sans Web,sans-serif;
-    padding: .75rem 1.5rem;
-    text-decoration: none;
-    text-transform: uppercase; }
-    .fp-shop-box a:hover {
-      background-color: #19625d; }
 
 .fp-shop-ctg {
   border: 1px solid #e1e1e1;
   border-top-width: 5px;
   padding: 1.5rem;
-  max-width: 23%; }
+  max-width: 23%;
+  text-align: center; }
   .fp-shop-ctg:hover {
     border-color: #d99054; }
 
 /* JOURNAL SECTION */
-.fp-journal h1 {
-  text-align: center;
-  line-height: 10rem; }
-
 .fp-journal-wrapper {
   display: -ms-flexbox;
   display: flex;
@@ -785,19 +877,18 @@ object {
   padding: 25px 15px 10px;
   font-size: 0.7rem;
   line-height: 0; }
-  .fp-journal-info h4 a {
+  .fp-journal-info h3 a {
     color: #248A83;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     line-height: 1.6rem; }
-    .fp-journal-info h4 a:hover {
+    .fp-journal-info h3 a:hover {
       color: #2f1339; }
   .fp-journal-info .read-entry {
     color: black;
     cursor: pointer;
-    font-family: Novecento Sans Web,sans-serif;
     padding: .75rem 1.5rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -809,20 +900,14 @@ object {
       border: 1px solid #248A83; }
 
 /* LATEST ADVENTURES */
-.adventures h1 {
-  text-align: center;
-  line-height: 10rem; }
-
 .adventures h3 {
   /* ADVENTURE TITLES */ }
   .adventures h3 a {
     color: white;
-    font-family: sans-serif;
-    text-transform: none;
+    font-family: "merriweather", sans-serif;
     text-decoration: none;
     font-weight: 400;
-    letter-spacing: 0.2rem;
-    padding-bottom: 10rem; }
+    letter-spacing: 0.2rem; }
     .adventures h3 a:hover {
       color: #f0e4d1; }
 
@@ -836,21 +921,20 @@ object {
   width: auto;
   z-index: -1;
   position: relative;
-  display: block; }
+  display: block;
+  object-fit: cover; }
 
 .adventures ul {
   list-style: none;
   display: inline;
   padding-left: 0;
   margin-left: 0; }
-  .adventures ul li h3 a {
-    margin-bottom: 20px; }
   .adventures ul li:first-child {
     width: 49%;
     float: left; }
     .adventures ul li:first-child h3 a {
       font-size: 3rem;
-      line-height: 1.3; }
+      line-height: 1.2; }
   .adventures ul li:nth-child(2) {
     width: 49%;
     float: right; }
@@ -859,7 +943,7 @@ object {
       width: 100%; }
     .adventures ul li:nth-child(2) h3 a {
       font-size: 2.5rem;
-      line-height: 1.3; }
+      line-height: 1.1; }
   .adventures ul li:nth-child(3), .adventures ul li:last-child {
     width: 24%;
     float: right;
@@ -869,8 +953,8 @@ object {
     .adventures ul li:nth-child(3) img, .adventures ul li:last-child img {
       height: 290px; }
     .adventures ul li:nth-child(3) h3 a, .adventures ul li:last-child h3 a {
-      font-size: 1.75rem;
-      line-height: 1.3; }
+      font-size: 1.6rem;
+      line-height: 1; }
 
 .story-wrap {
   position: relative;
@@ -887,43 +971,6 @@ object {
     top: 0;
     left: 20px;
     padding: 20px 10px; }
-
-.readtag {
-  border: 1px solid white;
-  padding: 12.5px 25px;
-  font-family: "Courier 10 Pitch", Courier, monospace;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: white;
-  font-size: 0.9rem;
-  line-height: 5rem; }
-  .readtag:hover {
-    background-color: #248A83;
-    color: white;
-    border: 1px solid #248A83;
-    outline: 0; }
-  .readtag:active {
-    outline: 0; }
-  .readtag:visited {
-    color: white; }
-    .readtag:visited:hover {
-      color: white; }
-
-.button {
-  padding: 12.5px 25px;
-  font-family: "Courier 10 Pitch", Courier, monospace;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: white;
-  font-size: 1.1rem;
-  background-color: #248A83; }
-  .button:hover {
-    background-color: #19625d;
-    color: white; }
-  .button:visited {
-    color: white; }
-    .button:visited:hover {
-      color: white; }
 
 /*--------------------------------------------------------------
 # Footer
@@ -984,7 +1031,7 @@ object {
   margin-top: 0;
   padding-top: 50px; }
 
-.blog .content-area {
+.content-area {
   border-right: 1px solid #e1e1e1;
   padding: 3.25rem 5% 3rem 0;
   width: 73%; }
@@ -1068,9 +1115,10 @@ object {
     font-weight: normal;
     text-transform: uppercase; }
     .product-links li a {
-      color: royalblue; }
+      color: #248A83;
+      text-decoration: none; }
       .product-links li a:hover {
-        color: purple; }
+        color: #2f1339; }
 
 .product-area {
   width: 1120px;
@@ -1190,30 +1238,19 @@ object {
     font-size: 2rem;
     color: #2f1339; }
 
-.status-publish h1 {
-  font-size: 2.5rem; }
+.page-content {
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+  margin-top: 0;
+  padding-top: 50px; }
 
-.status-publish h2 {
-  color: #2f1339;
-  font-size: 2rem; }
-
-.wpcf7-form label {
-  text-transform: uppercase;
-  font-family: "Courier 10 Pitch", Courier, monospace;
-  font-size: 1.1rem;
-  font-weight: normal; }
-
-.wpcf7-form .required {
-  color: #d99054;
-  font-size: 1.1rem; }
-
-.wpcf7-form .ajax-loader {
-  height: 20px;
-  width: 20px; }
-
-.wpcf7-form .wpcf7-submit {
-  font-size: .9rem;
-  padding: 8px 22.5px; }
+.content-area {
+  border-right: 1px solid #e1e1e1;
+  padding: 3.25rem 5% 3rem 0;
+  width: 73%; }
 
 .fa-search {
   line-height: 1.5;

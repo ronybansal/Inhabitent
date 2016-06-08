@@ -1,3 +1,49 @@
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+
+@font-face {
+  font-family: 'merriweather';
+  src: url('../../fonts/merriweather/merriweather-bold-webfont.woff2') format('woff2'),
+       url('../../fonts/merriweather/merriweather-bold-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'merriweather';
+  src: url('../../fonts/merriweather/merriweather-bolditalic-webfont.woff2') format('woff2'),
+       url('../../fonts/merriweather/merriweather-bolditalic-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'merriweather';
+  src: url('../../fonts/merriweather/merriweather-light-webfont.woff2') format('woff2'),
+       url('../../fonts/merriweather/merriweather-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'novocento';
+  src: url('../../fonts/novocento/novecentosanswide-normal-webfont.woff2') format('woff2'),
+       url('../../fonts/novocento/novocentosanswide-normal-webfont.woff') format('woff'),
+       url('../../fonts/novocento/novocentosanswide-normal-webfont.svg') format('svg'),
+       url('../../fonts/novocento/novocentosanswide-normal-webfont.ttf') format('ttf'),
+       url('../../fonts/novocento/novocentosanswide-normal-webfont.eot') format('eot');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'novocento';
+  src: url('../../fonts/novocento/novecentosanswide-demibold-webfont.woff2') format('woff2'),
+       url('../../fonts/novocento/novocentosanswide-demibold-webfont.woff') format('woff'),
+       url('../../fonts/novocento/novocentosanswide-demibold-webfont.svg') format('svg'),
+       url('../../fonts/novocento/novocentosanswide-demibold-webfont.ttf') format('ttf'),
+       url('../../fonts/novocento/novocentosanswide-demibold-webfont.eot') format('eot');
+  font-weight: bold;
+  font-style: normal;
+}

@@ -69,6 +69,106 @@ table {
 	width: 100%;
 }
 
+
+// BUTTON STYLES
+
+.green-btn {
+	background: #248a83;
+	color: white;
+	cursor: pointer;
+	font-family: $font__header;
+	padding: .75rem 1.5rem;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	&:hover {
+		background-color: #19625d;
+		color: white;
+	}
+	&:visited {
+		color: white;
+	}
+}
+
+.white-btn {
+	border: 1px solid white;
+	padding: 12.5px 25px;
+	font-family: $font__pre;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+	font-size: 0.9rem;
+	line-height: 5rem;
+
+	&:hover {
+		background-color: #248A83;
+		color: white;
+		border: 1px solid #248A83;
+		outline: 0;
+	}
+
+	&:active {
+		outline: 0;
+	}
+
+	&:visited {
+		color: white;
+
+		&:hover {
+			color:white;
+		}
+	}
+}
+
+.black-btn {
+	color: black;
+	cursor: pointer;
+	font-family: $font__header;
+	padding: .75rem 1.5rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: 1px solid black;
+	line-height: 3rem;
+
+	&:hover {
+		background: #248A83;
+		color: white !important;
+		border: 1px solid #248A83;
+	}
+
+	&:visited {
+		color: black;
+	}
+}
+
+//
+
+
+// AFFECTS STYLING ON FP
+
+.fp-header {
+	font-size: 2.4rem;
+	font-weight: 400;
+	margin-top: 3.75rem;
+	margin-bottom: 3.75rem;
+	text-align: center;
+	color: #2f1339;
+}
+
+h1 {
+	font-family: $font__header;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.fp-shop-ctg p {
+	font-family: $font__main;
+	font-size: 1rem;
+	line-height: 1.75;
+}
+
+//
+
 .container {
 	width: 1120px;
 	margin: 0 auto;

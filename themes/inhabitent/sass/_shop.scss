@@ -14,10 +14,11 @@
     text-transform: uppercase;
 
     a {
-      color: $color__link;
+      color: #248A83;
+      text-decoration: none;
 
       &:hover {
-        color: $color__link-visited;
+        color: #2f1339;
       }
     }
   }

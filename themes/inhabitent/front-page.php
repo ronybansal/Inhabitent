@@ -22,7 +22,7 @@ get_header(); ?>
       <!-- SHOP SECTION -->
 
       <section class= "fp-shop">
-        <h1> Shop Stuff </h1>
+        <h1 class= "fp-header"> Shop Stuff </h1>
         <?php
           $terms = get_terms( array (
             'taxonomy' => 'product_type',
@@ -40,8 +40,8 @@ get_header(); ?>
               />
 
               <p> <?php echo $term->description; ?> </p>
-              <a href=
-              "<?php echo get_term_link($term, 'product-type') ?>" > <?php echo $term->name?> Stuff
+              <a class="green-btn" href=
+              "<?php echo get_term_link($term, 'product-type') ?>"> <?php echo $term->name?> Stuff
               </a>
             </div>
 
@@ -53,7 +53,7 @@ get_header(); ?>
         <!-- SORTS JOURNALS TO POST 3 PIECES-->
 
       <section class= "fp-journal container">
-				<h1>Inhabitent Journal</h1>
+				<h1 class= "fp-header">Inhabitent Journal</h1>
 
         <div class="fp-journal-wrapper">
 					<?php
@@ -71,12 +71,12 @@ get_header(); ?>
                 <?php echo comments_number(); ?>
               </p>
 
-              <h4>
+              <h3>
                 <a href=
                   "<?php echo get_permalink(); ?>"><?php the_title(); ?>
                 </a>
-              </h4>
-							<a class= "read-entry" href=
+              </h3>
+							<a class= "black-btn" href=
                 "<?php echo get_permalink();   ?>">Read Entry
               </a>
 						</div>
@@ -90,7 +90,7 @@ get_header(); ?>
       <!-- Latest Adventures -->
 
       <section class="adventures container">
-        <h1>Latest Adventures</h1>
+        <h1 class= "fp-header">Latest Adventures</h1>
 
         <ul class="clearfix">
           <?php
@@ -113,7 +113,7 @@ get_header(); ?>
 
               <div class="story-info">
                 <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                <a class="readtag" href="<?php the_permalink(); ?>"> Read More </a>
+                <a class="white-btn" href="<?php the_permalink(); ?>"> Read More </a>
               </div>
             </div>
           </li>
@@ -122,7 +122,7 @@ get_header(); ?>
         </ul>
 
         <p class="clearfix">
-          <a href="adventures" class="button"> More Adventures </a>
+          <a href="adventures" class="green-btn"> More Adventures </a>
         </p>
       </section><!-- .adventures -->
 

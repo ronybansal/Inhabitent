@@ -25,3 +25,20 @@
 	padding: 0;
 	margin: 0;
 }
+
+.contact {
+	i {
+		line-height: 1.8;
+		margin-right: .5rem;
+		width: 20px;
+	}
+
+	a {
+		color: #248A83;
+		text-decoration: none;
+
+		&:hover {
+			color: #2f1339;
+		}
+	}
+}
