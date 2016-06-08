@@ -1,0 +1,45 @@
+/* Search Page */
+
+.search-container {
+  display: flex;
+}
+
+.search {
+  .page-title {
+    font-size: 2.25rem;
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 20px;
+  }
+
+  a {
+    &:visited {
+      color: #248A83;
+
+      &:hover {
+        color: #2f1339;
+      }
+    }
+  }
+
+  .entry-title {
+    position: relative;
+    background: none;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .entry-meta {
+    background: none;
+    color: black;
+    position: relative;
+    padding: 0;
+  }
+
+  .readmore {
+    margin-bottom: 30px;
+  }
+
+  .page-content {
+    padding-top: 10px;
+  }
+}

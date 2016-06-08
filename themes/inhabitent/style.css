@@ -1272,3 +1272,18 @@ input[type=search] {
 fieldset {
   margin: 0;
   padding: 0; }
+
+/* Search Page */
+.search-container {
+  display: -ms-flexbox;
+  display: flex; }
+
+.search .page-title {
+  font-size: 2.25rem;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 20px; }
+
+.search a:visited {
+  color: #248A83; }
+  .search a:visited:hover {
+    color: #2f1339; }
