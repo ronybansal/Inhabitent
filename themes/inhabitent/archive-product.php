@@ -30,11 +30,11 @@ get_header(); ?>
 							<a href="<?php home_url(); ?>/wordpress/product-type/<?php echo $product_type->slug; ?>"><?php echo $product_type->name; ?></a>
 						</li>
 				<?php endforeach; ?>
-			</ul><!-- .product-links -->
-		</header><!-- .product-header -->
+			</ul> <!-- .PRODUCT-LINKS -->
+		</header> <!-- .PRODUCT.HEADER -->
 
 		<div class="product-grid">
-			<?php /* Start the Loop */ ?>
+			<?php /* START LOOP */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php
@@ -48,9 +48,9 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 			<?php endif; ?>
-		</div><!-- .product-grid-item -->
-		</main><!-- #main -->
-	</div><!-- #primary -->
-</div><!-- .page-content -->
+		</div><!-- .PRODUCT-GRID-ITEM -->
+	</main><!-- #MAIN -->
+</div><!-- #PRIMARY -->
+</div><!-- .PAGE.CONTENT -->
 
 <?php get_footer(); ?>

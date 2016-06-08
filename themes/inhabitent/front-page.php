@@ -86,12 +86,45 @@ get_header(); ?>
 				</div> <!-- .FP-JOURNAL -->
 			</section>
 
+
+      <!-- Latest Adventures -->
+
       <section class="adventures container">
         <h1>Latest Adventures</h1>
 
-        <div class="adventures-"> </div>
-        <a href="#">More Adventures</a>
-      </section>
+        <ul class="clearfix">
+          <?php
+            $query = new WP_Query( array(
+              'post_type' => 'adventure',
+              'order' => 'ASC',
+              'orderby' => 'date',
+              'posts_per_page' => 4)
+            );
+
+            while ( $query->have_posts() ) : $query->the_post();
+          ?>
+
+          <li>
+            <div class="story-wrap">
+
+              <div class="adventure-img">
+                <?php the_post_thumbnail( 'full' ); ?>
+              </div>
+
+              <div class="story-info">
+                <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                <a class="readtag" href="<?php the_permalink(); ?>"> Read More </a>
+              </div>
+            </div>
+          </li>
+
+          <?php endwhile; wp_reset_postdata(); ?>
+        </ul>
+
+        <p class="clearfix">
+          <a href="adventures" class="button"> More Adventures </a>
+        </p>
+      </section><!-- .adventures -->
 
     </main> <!-- #main -->
   </div> <!-- #primary -->
