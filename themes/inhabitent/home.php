@@ -8,7 +8,7 @@
 get_header(); ?>
 <div class="page-content">
 
-	<div id="primary" class="content-area">
+	<div id="primary" class="content-area journal-border">
 		<main id="main" class="site-main" role="main">
 
 			<?php if ( have_posts() ) : ?>

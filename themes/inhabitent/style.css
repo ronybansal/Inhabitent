@@ -1022,6 +1022,9 @@ object {
   .site-info .year {
     font-size: 0.8rem; }
 
+/*--------------------------------------------------------------
+# Journal Page
+--------------------------------------------------------------*/
 .page-content {
   display: -ms-flexbox;
   display: flex;
@@ -1031,7 +1034,7 @@ object {
   margin-top: 0;
   padding-top: 50px; }
 
-.content-area {
+.journal-border {
   border-right: 1px solid #e1e1e1;
   padding: 3.25rem 5% 3rem 0;
   width: 73%; }
@@ -1247,7 +1250,7 @@ object {
   margin-top: 0;
   padding-top: 50px; }
 
-.content-area {
+.find-us-border {
   border-right: 1px solid #e1e1e1;
   padding: 3.25rem 5% 3rem 0;
   width: 73%; }
